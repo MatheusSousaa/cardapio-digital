@@ -1,75 +1,69 @@
-# React + TypeScript + Vite
+# Cardápio Digital - Aplicação Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Protótipo de um Cardápio Digital desenvolvido com React, TypeScript e React Query, consumindo uma API REST própria com CRUD completo.
 
-Currently, two official plugins are available:
+<img width="1170" height="710" alt="image" src="https://github.com/user-attachments/assets/e8a03f53-a720-4e7f-9517-ca342b69db74" />
+<img width="599" height="515" alt="image" src="https://github.com/user-attachments/assets/ff083358-b01f-46e1-8609-2114b559cf40" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## 💻 Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Antes de iniciar, você deve ter o Node.js e o NPM instalados em sua máquina.
 
-## Expanding the ESLint configuration
+## 🚀 Instalando
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Primeiro, você deve clonar o projeto na sua máquina:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/MatheusSousaa/cardapio-digital.git
+cd cardapio-digital
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Para instalar as dependências, execute:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
+
+Por fim, para executar o projeto:
+
+```bash
+npm run dev
+```
+
+## 🔧 Compilação
+
+Para compilar a aplicação para produção:
+
+```bash
+npm run build
+```
+
+Isso irá gerar uma versão otimizada da aplicação na pasta `dist`.
+
+## 🫂 Integração com Backend
+
+Esse frontend consome uma API REST desenvolvida em Java com Spring Boot, com CRUD completo (criação, leitura, atualização e exclusão de itens do cardápio). Para rodar o projeto completo, clone também o repositório do backend:
+
+👉 [Backend - Cardápio Digital](https://github.com/MatheusSousaa/backend-cardapio-digital)
+
+## 🛠️ Tecnologias
+
+**Frontend:**
+* React
+* TypeScript
+* React Query
+
+**Backend:**
+* Java
+* Spring Boot
+* Spring Data JPA
+* CRUD completo (Create, Read, Update, Delete)
+
+## 👨‍💻 Autor
+
+Feito por [Matheus Sousa](https://github.com/MatheusSousaa).
+
+## 📝 Licença
+
+Este projeto foi desenvolvido para fins de estudo.
