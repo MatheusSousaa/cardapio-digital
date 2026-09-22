@@ -1,0 +1,65 @@
+.modal-overflow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    background-color: var(--bg);
+    padding: 32px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-h);
+}
+
+.input-container input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    color: var(--text-h);
+    font-size: 16px;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: var(--text-h);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    opacity: 0.7;
+}
